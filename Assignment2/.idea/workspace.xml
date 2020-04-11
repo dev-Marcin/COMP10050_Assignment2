@@ -11,13 +11,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a95c042f-4f5e-44cd-99c0-4463cc2710eb" name="Default Changelist" comment="">
+    <list default="true" id="a95c042f-4f5e-44cd-99c0-4463cc2710eb" name="Default Changelist" comment="work on player movements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Focus.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Focus.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game_init.c" beforeDir="false" afterPath="$PROJECT_DIR$/game_init.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_init.h" beforeDir="false" afterPath="$PROJECT_DIR$/game_init.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_output.c" beforeDir="false" afterPath="$PROJECT_DIR$/input_output.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,12 +82,16 @@
       <workItem from="1585909702105" duration="610000" />
       <workItem from="1586531232753" duration="487000" />
       <workItem from="1586620961453" duration="6907000" />
-      <workItem from="1586628316810" duration="7123000" />
+      <workItem from="1586628316810" duration="9654000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="work on player movements" />
+    <option name="LAST_COMMIT_MESSAGE" value="work on player movements" />
   </component>
   <component name="WindowStateProjectService">
     <state x="492" y="246" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1585246619243">
@@ -104,25 +106,29 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="230" y="118" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1586635574378" />
-    <state width="1877" height="742" key="GridCell.Tab.0.bottom" timestamp="1586635474161">
+    <state width="1877" height="744" key="GridCell.Tab.0.bottom" timestamp="1586638180511">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="742" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1586635474161" />
-    <state width="1877" height="742" key="GridCell.Tab.0.center" timestamp="1586635474161">
+    <state width="1877" height="744" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1586638180511" />
+    <state width="1877" height="744" key="GridCell.Tab.0.center" timestamp="1586638180511">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="742" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1586635474161" />
-    <state width="1877" height="742" key="GridCell.Tab.0.left" timestamp="1586635474161">
+    <state width="1877" height="744" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1586638180511" />
+    <state width="1877" height="744" key="GridCell.Tab.0.left" timestamp="1586638180511">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="742" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1586635474161" />
-    <state width="1877" height="742" key="GridCell.Tab.0.right" timestamp="1586635474161">
+    <state width="1877" height="744" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1586638180511" />
+    <state width="1877" height="744" key="GridCell.Tab.0.right" timestamp="1586638180511">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="742" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1586635474161" />
+    <state width="1877" height="744" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1586638180511" />
     <state x="425" y="234" key="com.intellij.ide.util.TipDialog" timestamp="1585246555157">
       <screen x="0" y="23" width="1360" height="711" />
     </state>
     <state x="425" y="234" key="com.intellij.ide.util.TipDialog/0.23.1360.711@0.23.1360.711" timestamp="1585246555157" />
+    <state x="616" y="250" key="run.anything.popup" timestamp="1586638060879">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1586638060879" />
   </component>
 </project>

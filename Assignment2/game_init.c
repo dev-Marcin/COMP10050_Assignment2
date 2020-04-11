@@ -3,7 +3,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "game_init.h"
+#include "input_output.h"
+
 
 // Function to set up players at beginning of the game
 void initialize_players(player players[PLAYERS_NUM])
@@ -112,19 +113,36 @@ void initialize_board(square board [BOARD_SIZE][BOARD_SIZE])
 
 void turns (player players[PLAYERS_NUM], square board[BOARD_SIZE][BOARD_SIZE])
 {
-    int turn = 1;
+    int turn = 0;
     char direction[15];
     // board[i][j] corresponds as: i = y-coord | j = x-coord
-    unsigned int x, y;
+    unsigned int x=0, y=0;
     unsigned int x1, y1;
 
     while (turn != -1) {
 
-        printf("* Player %d's turn.\nWhich square would you like to move? X Y\n", (turn % 2)+1);
-        scanf("\n%d %d", &x, &y);
+        while (board[y][x].type == INVALID) {
+
+            // Clear screen
+            printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+            print_board(board);
+            
+            printf("* Player %d's turn.\nWhich square would you like to move? X Y\n", (turn % 2)+1);
+            scanf("\n%d %d", &x, &y);
+
+            if (board[y][x].type == VALID) {
+                if (players[turn%2].player_color != board[y][x].stack->p_color) {
+                    x = 0;
+                    y = 0;
+                }
+            }
+        }
+
         x1 = x;
         y1 = y;
-        printf("Which direction do you want to move? Choices: U, D, L, R. No spaces!\n");
+
+
+        printf("Which direction do you want to move? Length of movement = Stack Size\nChoices: U, D, L, R. No spaces!\n");
         scanf("\n%s", direction);
 
         for (int i = 0; i < 15; i++) {
@@ -144,6 +162,9 @@ void turns (player players[PLAYERS_NUM], square board[BOARD_SIZE][BOARD_SIZE])
         }
         printf("\nEnd pos: %d %d\n", x1, y1);
         turn++;
+
+        x = 0;
+        y = 0;
     }
 
 
