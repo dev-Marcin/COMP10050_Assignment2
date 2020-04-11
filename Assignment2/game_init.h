@@ -1,6 +1,4 @@
 //
-// Created by Lili on 24/03/2020.
-//
 
 #ifndef FOCUS_GAME_INIT_H
 #define FOCUS_GAME_INIT_H
@@ -26,9 +24,14 @@ typedef enum square_type {
 }square_type;
 
 //Player
-typedef struct player{
+typedef struct player {
     //the color associated with the player
     color player_color;
+
+    char player_name[20];
+    unsigned int pieces_captured;
+    unsigned int pieces_owned;
+
     /*
      * A player should also be characterized by:
      * name,

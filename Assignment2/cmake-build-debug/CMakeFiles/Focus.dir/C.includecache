@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/Users/Marcin/Desktop/COMP10050/Assignment2/game_init.h
+
+E:/Users/Marcin/Desktop/COMP10050/Assignment2/input_output.c
+stdio.h
+-
+input_output.h
+E:/Users/Marcin/Desktop/COMP10050/Assignment2/input_output.h
+
+E:/Users/Marcin/Desktop/COMP10050/Assignment2/input_output.h
+game_init.h
+E:/Users/Marcin/Desktop/COMP10050/Assignment2/game_init.h
+

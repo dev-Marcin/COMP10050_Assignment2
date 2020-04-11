@@ -42,10 +42,10 @@ RM = "S:\CLion 2019.3.5\bin\cmake\win\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\Users\Marcin\Desktop\Assignment2
+CMAKE_SOURCE_DIR = E:\Users\Marcin\Desktop\COMP10050\Assignment2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\Users\Marcin\Desktop\Assignment2\cmake-build-debug
+CMAKE_BINARY_DIR = E:\Users\Marcin\Desktop\COMP10050\Assignment2\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Focus.dir/depend.make
@@ -58,42 +58,42 @@ include CMakeFiles/Focus.dir/flags.make
 
 CMakeFiles/Focus.dir/main.c.obj: CMakeFiles/Focus.dir/flags.make
 CMakeFiles/Focus.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Users\Marcin\Desktop\Assignment2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Focus.dir/main.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Focus.dir\main.c.obj   -c E:\Users\Marcin\Desktop\Assignment2\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Users\Marcin\Desktop\COMP10050\Assignment2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Focus.dir/main.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Focus.dir\main.c.obj   -c E:\Users\Marcin\Desktop\COMP10050\Assignment2\main.c
 
 CMakeFiles/Focus.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Focus.dir/main.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\Users\Marcin\Desktop\Assignment2\main.c > CMakeFiles\Focus.dir\main.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\Users\Marcin\Desktop\COMP10050\Assignment2\main.c > CMakeFiles\Focus.dir\main.c.i
 
 CMakeFiles/Focus.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Focus.dir/main.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\Users\Marcin\Desktop\Assignment2\main.c -o CMakeFiles\Focus.dir\main.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\Users\Marcin\Desktop\COMP10050\Assignment2\main.c -o CMakeFiles\Focus.dir\main.c.s
 
 CMakeFiles/Focus.dir/input_output.c.obj: CMakeFiles/Focus.dir/flags.make
 CMakeFiles/Focus.dir/input_output.c.obj: ../input_output.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Users\Marcin\Desktop\Assignment2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Focus.dir/input_output.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Focus.dir\input_output.c.obj   -c E:\Users\Marcin\Desktop\Assignment2\input_output.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Users\Marcin\Desktop\COMP10050\Assignment2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Focus.dir/input_output.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Focus.dir\input_output.c.obj   -c E:\Users\Marcin\Desktop\COMP10050\Assignment2\input_output.c
 
 CMakeFiles/Focus.dir/input_output.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Focus.dir/input_output.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\Users\Marcin\Desktop\Assignment2\input_output.c > CMakeFiles\Focus.dir\input_output.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\Users\Marcin\Desktop\COMP10050\Assignment2\input_output.c > CMakeFiles\Focus.dir\input_output.c.i
 
 CMakeFiles/Focus.dir/input_output.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Focus.dir/input_output.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\Users\Marcin\Desktop\Assignment2\input_output.c -o CMakeFiles\Focus.dir\input_output.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\Users\Marcin\Desktop\COMP10050\Assignment2\input_output.c -o CMakeFiles\Focus.dir\input_output.c.s
 
 CMakeFiles/Focus.dir/game_init.c.obj: CMakeFiles/Focus.dir/flags.make
 CMakeFiles/Focus.dir/game_init.c.obj: ../game_init.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Users\Marcin\Desktop\Assignment2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Focus.dir/game_init.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Focus.dir\game_init.c.obj   -c E:\Users\Marcin\Desktop\Assignment2\game_init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\Users\Marcin\Desktop\COMP10050\Assignment2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Focus.dir/game_init.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Focus.dir\game_init.c.obj   -c E:\Users\Marcin\Desktop\COMP10050\Assignment2\game_init.c
 
 CMakeFiles/Focus.dir/game_init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Focus.dir/game_init.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\Users\Marcin\Desktop\Assignment2\game_init.c > CMakeFiles\Focus.dir\game_init.c.i
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\Users\Marcin\Desktop\COMP10050\Assignment2\game_init.c > CMakeFiles\Focus.dir\game_init.c.i
 
 CMakeFiles/Focus.dir/game_init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Focus.dir/game_init.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\Users\Marcin\Desktop\Assignment2\game_init.c -o CMakeFiles\Focus.dir\game_init.c.s
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\Users\Marcin\Desktop\COMP10050\Assignment2\game_init.c -o CMakeFiles\Focus.dir\game_init.c.s
 
 # Object files for target Focus
 Focus_OBJECTS = \
@@ -111,7 +111,7 @@ Focus.exe: CMakeFiles/Focus.dir/build.make
 Focus.exe: CMakeFiles/Focus.dir/linklibs.rsp
 Focus.exe: CMakeFiles/Focus.dir/objects1.rsp
 Focus.exe: CMakeFiles/Focus.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\Users\Marcin\Desktop\Assignment2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable Focus.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\Users\Marcin\Desktop\COMP10050\Assignment2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable Focus.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Focus.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -124,6 +124,6 @@ CMakeFiles/Focus.dir/clean:
 .PHONY : CMakeFiles/Focus.dir/clean
 
 CMakeFiles/Focus.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\Users\Marcin\Desktop\Assignment2 E:\Users\Marcin\Desktop\Assignment2 E:\Users\Marcin\Desktop\Assignment2\cmake-build-debug E:\Users\Marcin\Desktop\Assignment2\cmake-build-debug E:\Users\Marcin\Desktop\Assignment2\cmake-build-debug\CMakeFiles\Focus.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\Users\Marcin\Desktop\COMP10050\Assignment2 E:\Users\Marcin\Desktop\COMP10050\Assignment2 E:\Users\Marcin\Desktop\COMP10050\Assignment2\cmake-build-debug E:\Users\Marcin\Desktop\COMP10050\Assignment2\cmake-build-debug E:\Users\Marcin\Desktop\COMP10050\Assignment2\cmake-build-debug\CMakeFiles\Focus.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Focus.dir/depend
 
