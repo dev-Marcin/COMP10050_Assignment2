@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "game_init.h"
 
 // Function to set up players at beginning of the game
@@ -9,15 +10,18 @@ void initialize_players(player players[PLAYERS_NUM])
 {
     char c = 'c';
     for (int i = 0; i < PLAYERS_NUM; i++) {
-        printf("Enter Player %d's name:\n", i+1);
+        // Player inputs
+        printf("Player %d's name:\n", i+1);
         scanf("%s", players[i].player_name);
 
+        // 1st player choice of colour
         if (i == 0) {
             while (!(c == 'G' || c == 'R')) {
                 printf("Player %d's colour 'R' for RED, or 'G' for GREEN?\n", i+1);
                 scanf("\n%c", &c);
             }
         } else {
+            // 2nd player gets remaining colour
             if (c == 'G') {
                 players[i].player_color = GREEN;
                 printf("Player %d's colour is GREEN.\n", i+1);
@@ -27,6 +31,7 @@ void initialize_players(player players[PLAYERS_NUM])
             }
         }
 
+        // Player 1 choice of colour - Sets 'char c' to remaining colour for Player 2
         if (i == 0 && c == 'G') {
             players[i].player_color = GREEN;
             printf("Player %d's colour is GREEN.\n", i+1);
@@ -79,9 +84,8 @@ void set_red(square * s)
 //initializes the board
 void initialize_board(square board [BOARD_SIZE][BOARD_SIZE])
 {
-
-    for(int i=0; i< BOARD_SIZE; i++){
-        for(int j=0; j< BOARD_SIZE; j++){
+    for(int i=0; i< BOARD_SIZE; i++) {
+        for(int j=0; j< BOARD_SIZE; j++) {
             //invalid squares
             if((i==0 && (j==0 || j==1 || j==6 || j==7)) ||
                (i==1 && (j==0 || j==7)) ||
@@ -89,7 +93,7 @@ void initialize_board(square board [BOARD_SIZE][BOARD_SIZE])
                (i==7 && (j==0 || j==1 || j==6 || j==7)))
                 set_invalid(&board[i][j]);
 
-            else{
+            else {
                 //squares with no pieces
                 if(i==0 || i ==7 || j==0 || j == 7)
                     set_empty(&board[i][j]);
@@ -103,8 +107,43 @@ void initialize_board(square board [BOARD_SIZE][BOARD_SIZE])
                 }
             }
         }
+    }
+}
 
+void turns (player players[PLAYERS_NUM], square board[BOARD_SIZE][BOARD_SIZE])
+{
+    int turn = 1;
+    char direction[15];
+    // board[i][j] corresponds as: i = y-coord | j = x-coord
+    unsigned int x, y;
+    unsigned int x1, y1;
 
+    while (turn != -1) {
+
+        printf("* Player %d's turn.\nWhich square would you like to move? X Y\n", (turn % 2)+1);
+        scanf("\n%d %d", &x, &y);
+        x1 = x;
+        y1 = y;
+        printf("Which direction do you want to move? Choices: U, D, L, R. No spaces!\n");
+        scanf("\n%s", direction);
+
+        for (int i = 0; i < 15; i++) {
+
+            if (direction[i] == 'U') {
+                y1--;
+            }
+            else if (direction[i] == 'D') {
+                y1++;
+            }
+            else if (direction[i] == 'L') {
+                x1--;
+            }
+            else if (direction[i] == 'R') {
+                x1++;
+            }
+        }
+        printf("\nEnd pos: %d %d\n", x1, y1);
+        turn++;
     }
 
 

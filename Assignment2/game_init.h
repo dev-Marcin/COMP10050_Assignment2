@@ -71,6 +71,8 @@ void initialize_players(player players[PLAYERS_NUM]);
 //Function to create the board
 void initialize_board(square board[BOARD_SIZE][BOARD_SIZE]);
 
+void turns (player players[PLAYERS_NUM], square board[BOARD_SIZE][BOARD_SIZE]);
+
 
 
 

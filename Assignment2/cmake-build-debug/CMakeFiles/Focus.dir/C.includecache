@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-E:/Users/Marcin/Desktop/COMP10050/Assignment2/game_init.h
-
-E:/Users/Marcin/Desktop/COMP10050/Assignment2/input_output.c
+E:/Users/Marcin/Desktop/COMP10050/Assignment2/game_init.c
 stdio.h
 -
-input_output.h
-E:/Users/Marcin/Desktop/COMP10050/Assignment2/input_output.h
-
-E:/Users/Marcin/Desktop/COMP10050/Assignment2/input_output.h
+stdlib.h
+-
+string.h
+-
 game_init.h
+E:/Users/Marcin/Desktop/COMP10050/Assignment2/game_init.h
+
 E:/Users/Marcin/Desktop/COMP10050/Assignment2/game_init.h
 
