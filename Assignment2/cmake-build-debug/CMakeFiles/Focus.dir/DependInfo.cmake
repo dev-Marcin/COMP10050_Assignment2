@@ -4,7 +4,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "E:/Users/Marcin/Desktop/COMP10050/Assignment2/game.c" "E:/Users/Marcin/Desktop/COMP10050/Assignment2/cmake-build-debug/CMakeFiles/Focus.dir/game.c.obj"
   "E:/Users/Marcin/Desktop/COMP10050/Assignment2/game_init.c" "E:/Users/Marcin/Desktop/COMP10050/Assignment2/cmake-build-debug/CMakeFiles/Focus.dir/game_init.c.obj"
   "E:/Users/Marcin/Desktop/COMP10050/Assignment2/input_output.c" "E:/Users/Marcin/Desktop/COMP10050/Assignment2/cmake-build-debug/CMakeFiles/Focus.dir/input_output.c.obj"
   "E:/Users/Marcin/Desktop/COMP10050/Assignment2/main.c" "E:/Users/Marcin/Desktop/COMP10050/Assignment2/cmake-build-debug/CMakeFiles/Focus.dir/main.c.obj"

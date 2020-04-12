@@ -74,12 +74,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/Users/Marcin/Desktop/COMP10050/Assignment2/game.c">
-			<Option target="Focus"/>
-		</Unit>
-		<Unit filename="E:/Users/Marcin/Desktop/COMP10050/Assignment2/game.h">
-			<Option target="Focus"/>
-		</Unit>
 		<Unit filename="E:/Users/Marcin/Desktop/COMP10050/Assignment2/game_init.c">
 			<Option target="Focus"/>
 		</Unit>

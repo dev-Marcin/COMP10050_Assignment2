@@ -10,4 +10,4 @@
 //Function to print the board
 void print_board(square board[BOARD_SIZE][BOARD_SIZE]);
 
-void init_players();
+void turns (player players[PLAYERS_NUM], square board[BOARD_SIZE][BOARD_SIZE]);
