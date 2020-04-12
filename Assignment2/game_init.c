@@ -17,29 +17,34 @@ void initialize_players(player players[PLAYERS_NUM])
 
         // 1st player choice of colour
         if (i == 0) {
-            while (!(c == 'G' || c == 'R')) {
-                printf("Player %d's colour 'R' for RED, or 'G' for GREEN?\n", i+1);
+            while (!(c == 'G' || c == 'g'|| c == 'R' || c == 'r')) {
+                printf("Chose your colour: 'R' for RED, or 'G' for GREEN?\n");
                 scanf("\n%c", &c);
             }
         } else {
-            // 2nd player gets remaining colour
+            // 2nd player receives remaining colour
             if (c == 'G') {
                 players[i].player_color = GREEN;
-                printf("Player %d's colour is GREEN.\n", i+1);
-            } else if (c == 'R') {
+                // Clearing screen and showing player colours at end of player initialization
+                printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+                printf("> %d: %s's colour is RED.\n", i, players[i-1].player_name);
+                printf("> %d: %s's colour is GREEN.\n", i+1, players[i].player_name);
+            }
+            else if (c == 'R') {
                 players[i].player_color = RED;
-                printf("Player %d's colour is RED.\n", i+1);
+                // Clearing screen and showing player colours at end of player initialization
+                printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+                printf("> %d: %s's colour is GREEN.\n", i, players[i-1].player_name);
+                printf("> %d: %s's colour is RED.\n", i+1, players[i].player_name);
             }
         }
 
         // Player 1 choice of colour - Sets 'char c' to remaining colour for Player 2
-        if (i == 0 && c == 'G') {
+        if (i == 0 && (c == 'G' || c == 'g')) {
             players[i].player_color = GREEN;
-            printf("Player %d's colour is GREEN.\n", i+1);
             c = 'R';
-        } else if (i == 0 && c == 'R') {
+        } else if (i == 0 && (c == 'R' || c == 'r')) {
             players[i].player_color = RED;
-            printf("Player %d's colour is RED.\n", i+1);
             c = 'G';
         }
     }
@@ -113,21 +118,28 @@ void initialize_board(square board [BOARD_SIZE][BOARD_SIZE])
 
 void turns (player players[PLAYERS_NUM], square board[BOARD_SIZE][BOARD_SIZE])
 {
-    int turn = 0;
-    char direction[15];
+    char movement[10];  // Player movement
+    int turn = 0;       // Turn count
     // board[i][j] corresponds as: i = y-coord | j = x-coord
     unsigned int x=0, y=0;
     unsigned int x1, y1;
 
+    // Loop runs until game over
     while (turn != -1) {
 
+        // Player input and clearing/printing board
         while (board[y][x].type == INVALID) {
 
-            // Clear screen
-            printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-            print_board(board);
-            
-            printf("* Player %d's turn.\nWhich square would you like to move? X Y\n", (turn % 2)+1);
+            // Refreshing screen
+            while (turn != 0) {
+                printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+                printf("\n> Turn End Pos :       x:%d y:%d\n", x1, y1);
+                print_board(board);
+                break;
+            }
+
+            //
+            printf("\n> Player %d's turn.\nWhich square would you like to move? X Y\n", (turn % 2)+1);
             scanf("\n%d %d", &x, &y);
 
             if (board[y][x].type == VALID) {
@@ -143,26 +155,26 @@ void turns (player players[PLAYERS_NUM], square board[BOARD_SIZE][BOARD_SIZE])
 
 
         printf("Which direction do you want to move? Length of movement = Stack Size\nChoices: U, D, L, R. No spaces!\n");
-        scanf("\n%s", direction);
+        scanf("\n%s", movement);
 
-        for (int i = 0; i < 15; i++) {
+        for (int i = 0; i < 10; i++) {
 
-            if (direction[i] == 'U') {
+            if (movement[i] == 'U') {
                 y1--;
             }
-            else if (direction[i] == 'D') {
+            else if (movement[i] == 'D') {
                 y1++;
             }
-            else if (direction[i] == 'L') {
+            else if (movement[i] == 'L') {
                 x1--;
             }
-            else if (direction[i] == 'R') {
+            else if (movement[i] == 'R') {
                 x1++;
             }
         }
-        printf("\nEnd pos: %d %d\n", x1, y1);
-        turn++;
 
+        // Turn counter and reset
+        turn++;
         x = 0;
         y = 0;
     }

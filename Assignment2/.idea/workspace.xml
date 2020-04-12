@@ -13,9 +13,27 @@
   <component name="ChangeListManager">
     <list default="true" id="a95c042f-4f5e-44cd-99c0-4463cc2710eb" name="Default Changelist" comment="work on player movements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/game_init.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/game_init.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/input_output.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/input_output.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/objects1.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Focus.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Focus.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Focus.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Focus.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game_init.c" beforeDir="false" afterPath="$PROJECT_DIR$/game_init.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_output.c" beforeDir="false" afterPath="$PROJECT_DIR$/input_output.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +59,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -83,6 +102,9 @@
       <workItem from="1586531232753" duration="487000" />
       <workItem from="1586620961453" duration="6907000" />
       <workItem from="1586628316810" duration="9654000" />
+      <workItem from="1586691062026" duration="352000" />
+      <workItem from="1586700669107" duration="1735000" />
+      <workItem from="1586702607029" duration="3509000" />
     </task>
     <servers />
   </component>
@@ -106,22 +128,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="230" y="118" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1586635574378" />
-    <state width="1877" height="744" key="GridCell.Tab.0.bottom" timestamp="1586638180511">
+    <state width="1183" height="420" key="GridCell.Tab.0.bottom" timestamp="1586704979241">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="744" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1586638180511" />
-    <state width="1877" height="744" key="GridCell.Tab.0.center" timestamp="1586638180511">
+    <state width="1183" height="420" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1586704979241" />
+    <state width="1183" height="420" key="GridCell.Tab.0.center" timestamp="1586704979240">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="744" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1586638180511" />
-    <state width="1877" height="744" key="GridCell.Tab.0.left" timestamp="1586638180511">
+    <state width="1183" height="420" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1586704979240" />
+    <state width="1183" height="420" key="GridCell.Tab.0.left" timestamp="1586704979240">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="744" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1586638180511" />
-    <state width="1877" height="744" key="GridCell.Tab.0.right" timestamp="1586638180511">
+    <state width="1183" height="420" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1586704979240" />
+    <state width="1183" height="420" key="GridCell.Tab.0.right" timestamp="1586704979240">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="744" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1586638180511" />
+    <state width="1183" height="420" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1586704979240" />
     <state x="425" y="234" key="com.intellij.ide.util.TipDialog" timestamp="1585246555157">
       <screen x="0" y="23" width="1360" height="711" />
     </state>
