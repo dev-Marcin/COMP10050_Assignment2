@@ -22,7 +22,7 @@ int main() {
     initialize_board(board);
     print_board(board);
 
-    // Player turns
+    // Player turns - main game
     turns(players, board);
     return 0;
 }

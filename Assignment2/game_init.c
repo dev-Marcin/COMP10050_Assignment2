@@ -9,7 +9,9 @@
 // Function to set up players at beginning of the game
 void initialize_players(player players[PLAYERS_NUM])
 {
-    char c = 'c';
+    char c = 'c'; // player colour
+
+    // Assigning player names and colours
     for (int i = 0; i < PLAYERS_NUM; i++) {
         // Player inputs
         printf("Player %d's name:\n", i+1);
@@ -22,9 +24,11 @@ void initialize_players(player players[PLAYERS_NUM])
                 scanf("\n%c", &c);
             }
         } else {
-            // 2nd player receives remaining colour
+            // 2nd player receives remaining colour / Code runs on second loop
             if (c == 'G') {
                 players[i].player_color = GREEN;
+                players[i].pieces_captured = 0;
+                players[i].pieces_owned = 0;
                 // Clearing screen and showing player colours at end of player initialization
                 printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                 printf("> %d: %s's colour is RED.\n", i, players[i-1].player_name);
@@ -32,6 +36,8 @@ void initialize_players(player players[PLAYERS_NUM])
             }
             else if (c == 'R') {
                 players[i].player_color = RED;
+                players[i].pieces_captured = 0;
+                players[i].pieces_owned = 0;
                 // Clearing screen and showing player colours at end of player initialization
                 printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                 printf("> %d: %s's colour is GREEN.\n", i, players[i-1].player_name);
@@ -42,9 +48,13 @@ void initialize_players(player players[PLAYERS_NUM])
         // Player 1 choice of colour - Sets 'char c' to remaining colour for Player 2
         if (i == 0 && (c == 'G' || c == 'g')) {
             players[i].player_color = GREEN;
+            players[i].pieces_captured = 0;
+            players[i].pieces_owned = 0;
             c = 'R';
         } else if (i == 0 && (c == 'R' || c == 'r')) {
             players[i].player_color = RED;
+            players[i].pieces_captured = 0;
+            players[i].pieces_owned = 0;
             c = 'G';
         }
     }

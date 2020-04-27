@@ -5,7 +5,13 @@ CMakeFiles/Focus.dir/game_init.c.obj: ../game_init.c
 CMakeFiles/Focus.dir/game_init.c.obj: ../game_init.h
 CMakeFiles/Focus.dir/game_init.c.obj: ../input_output.h
 
+CMakeFiles/Focus.dir/gameplay.c.obj: ../game_init.h
+CMakeFiles/Focus.dir/gameplay.c.obj: ../gameplay.c
+CMakeFiles/Focus.dir/gameplay.c.obj: ../gameplay.h
+CMakeFiles/Focus.dir/gameplay.c.obj: ../input_output.h
+
 CMakeFiles/Focus.dir/input_output.c.obj: ../game_init.h
+CMakeFiles/Focus.dir/input_output.c.obj: ../gameplay.h
 CMakeFiles/Focus.dir/input_output.c.obj: ../input_output.c
 CMakeFiles/Focus.dir/input_output.c.obj: ../input_output.h
 

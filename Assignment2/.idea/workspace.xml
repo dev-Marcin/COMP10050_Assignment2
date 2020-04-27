@@ -12,9 +12,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a95c042f-4f5e-44cd-99c0-4463cc2710eb" name="Default Changelist" comment="work on player movements">
+      <change afterPath="$PROJECT_DIR$/gameplay.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gameplay.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/cmake_clean.cmake" afterDir="false" />
@@ -33,6 +34,7 @@
       <change beforePath="$PROJECT_DIR$/game_init.h" beforeDir="false" afterPath="$PROJECT_DIR$/game_init.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input_output.c" beforeDir="false" afterPath="$PROJECT_DIR$/input_output.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input_output.h" beforeDir="false" afterPath="$PROJECT_DIR$/input_output.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +105,13 @@
       <workItem from="1586628316810" duration="9654000" />
       <workItem from="1586691062026" duration="352000" />
       <workItem from="1586700669107" duration="1735000" />
-      <workItem from="1586702607029" duration="9703000" />
+      <workItem from="1586702607029" duration="10780000" />
+      <workItem from="1586780348353" duration="668000" />
+      <workItem from="1587119588320" duration="614000" />
+      <workItem from="1587399530052" duration="1662000" />
+      <workItem from="1587666569178" duration="510000" />
+      <workItem from="1587726261985" duration="46000" />
+      <workItem from="1587995713914" duration="10956000" />
     </task>
     <servers />
   </component>
@@ -127,22 +135,26 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="230" y="118" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1586635574378" />
-    <state width="1183" height="413" key="GridCell.Tab.0.bottom" timestamp="1586718698223">
+    <state x="647" y="315" key="FileChooserDialogImpl" timestamp="1587726308119">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1183" height="413" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1586718698223" />
-    <state width="1183" height="413" key="GridCell.Tab.0.center" timestamp="1586718698223">
+    <state x="647" y="315" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1587726308119" />
+    <state width="1877" height="825" key="GridCell.Tab.0.bottom" timestamp="1588006715474">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1183" height="413" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1586718698223" />
-    <state width="1183" height="413" key="GridCell.Tab.0.left" timestamp="1586718698223">
+    <state width="1877" height="825" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1588006715474" />
+    <state width="1877" height="825" key="GridCell.Tab.0.center" timestamp="1588006715474">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1183" height="413" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1586718698223" />
-    <state width="1183" height="413" key="GridCell.Tab.0.right" timestamp="1586718698223">
+    <state width="1877" height="825" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1588006715474" />
+    <state width="1877" height="825" key="GridCell.Tab.0.left" timestamp="1588006715474">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1183" height="413" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1586718698223" />
+    <state width="1877" height="825" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1588006715474" />
+    <state width="1877" height="825" key="GridCell.Tab.0.right" timestamp="1588006715474">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="825" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1588006715474" />
     <state x="425" y="234" key="com.intellij.ide.util.TipDialog" timestamp="1585246555157">
       <screen x="0" y="23" width="1360" height="711" />
     </state>

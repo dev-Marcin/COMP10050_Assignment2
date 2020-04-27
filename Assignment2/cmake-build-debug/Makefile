@@ -149,6 +149,33 @@ game_init.c.s:
 	$(MAKE) -f CMakeFiles\Focus.dir\build.make CMakeFiles/Focus.dir/game_init.c.s
 .PHONY : game_init.c.s
 
+gameplay.obj: gameplay.c.obj
+
+.PHONY : gameplay.obj
+
+# target to build an object file
+gameplay.c.obj:
+	$(MAKE) -f CMakeFiles\Focus.dir\build.make CMakeFiles/Focus.dir/gameplay.c.obj
+.PHONY : gameplay.c.obj
+
+gameplay.i: gameplay.c.i
+
+.PHONY : gameplay.i
+
+# target to preprocess a source file
+gameplay.c.i:
+	$(MAKE) -f CMakeFiles\Focus.dir\build.make CMakeFiles/Focus.dir/gameplay.c.i
+.PHONY : gameplay.c.i
+
+gameplay.s: gameplay.c.s
+
+.PHONY : gameplay.s
+
+# target to generate assembly for a file
+gameplay.c.s:
+	$(MAKE) -f CMakeFiles\Focus.dir\build.make CMakeFiles/Focus.dir/gameplay.c.s
+.PHONY : gameplay.c.s
+
 input_output.obj: input_output.c.obj
 
 .PHONY : input_output.obj
@@ -215,6 +242,9 @@ help:
 	@echo ... game_init.obj
 	@echo ... game_init.i
 	@echo ... game_init.s
+	@echo ... gameplay.obj
+	@echo ... gameplay.i
+	@echo ... gameplay.s
 	@echo ... input_output.obj
 	@echo ... input_output.i
 	@echo ... input_output.s
