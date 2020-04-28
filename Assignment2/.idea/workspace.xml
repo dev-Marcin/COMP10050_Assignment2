@@ -13,24 +13,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a95c042f-4f5e-44cd-99c0-4463cc2710eb" name="Default Changelist" comment="work on player movements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/game_init.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/game_init.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/gameplay.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/gameplay.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/input_output.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/input_output.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/main.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Focus.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Focus.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Focus.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Focus.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Focus.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game_init.c" beforeDir="false" afterPath="$PROJECT_DIR$/game_init.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game_init.h" beforeDir="false" afterPath="$PROJECT_DIR$/game_init.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gameplay.c" beforeDir="false" afterPath="$PROJECT_DIR$/gameplay.c" afterDir="false" />
@@ -115,7 +102,8 @@
       <workItem from="1587399530052" duration="1662000" />
       <workItem from="1587666569178" duration="510000" />
       <workItem from="1587726261985" duration="46000" />
-      <workItem from="1587995713914" duration="23461000" />
+      <workItem from="1587995713914" duration="23807000" />
+      <workItem from="1588084439895" duration="8986000" />
     </task>
     <servers />
   </component>
@@ -143,22 +131,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="647" y="315" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1587726308119" />
-    <state width="1877" height="824" key="GridCell.Tab.0.bottom" timestamp="1588019161184">
+    <state width="1877" height="830" key="GridCell.Tab.0.bottom" timestamp="1588093986499">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="824" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1588019161184" />
-    <state width="1877" height="824" key="GridCell.Tab.0.center" timestamp="1588019161183">
+    <state width="1877" height="830" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1588093986499" />
+    <state width="1877" height="830" key="GridCell.Tab.0.center" timestamp="1588093986499">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="824" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1588019161183" />
-    <state width="1877" height="824" key="GridCell.Tab.0.left" timestamp="1588019161183">
+    <state width="1877" height="830" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1588093986499" />
+    <state width="1877" height="830" key="GridCell.Tab.0.left" timestamp="1588093986499">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="824" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1588019161183" />
-    <state width="1877" height="824" key="GridCell.Tab.0.right" timestamp="1588019161183">
+    <state width="1877" height="830" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1588093986499" />
+    <state width="1877" height="830" key="GridCell.Tab.0.right" timestamp="1588093986499">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="824" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1588019161183" />
+    <state width="1877" height="830" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1588093986499" />
     <state x="461" y="182" key="SettingsEditor" timestamp="1588018798175">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

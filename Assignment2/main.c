@@ -1,4 +1,4 @@
-//j
+// Written by Marcin Nowak - 19300156
 
 #include <stdio.h>
 
@@ -22,7 +22,8 @@ int main() {
     initialize_board(board);
     print_board(board);
 
-    // Player turns - main game
+    // Player turns - main game, including game over screen
     turns(players, board);
+
     return 0;
 }

@@ -1,8 +1,7 @@
-//
+// Written by Marcin Nowak - 19300156
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include "input_output.h"
 
 
@@ -61,7 +60,7 @@ void initialize_players(player players[PLAYERS_NUM])
 }
 
 
-//Set Invalid Squares (where it is not possible to place stacks)
+// Set Invalid Squares (where it is not possible to place stacks)
 void set_invalid(square * s)
 {
     s->type = INVALID;
@@ -69,7 +68,7 @@ void set_invalid(square * s)
     s->num_pieces = 0;
 }
 
-//Set Empty Squares (with no pieces/stacks)
+// Set Empty Squares (with no pieces/stacks)
 void set_empty(square * s)
 {
     s->type = VALID;
@@ -77,7 +76,7 @@ void set_empty(square * s)
     s->num_pieces = 0;
 }
 
-//Set squares  with a GREEN piece
+// Set squares  with a GREEN piece
 void set_green(square * s)
 {
     s->type = VALID;
@@ -87,7 +86,7 @@ void set_green(square * s)
     s->num_pieces = 1;
 }
 
-//Set squares with a RED piece
+//  Set squares with a RED piece
 void set_red(square * s)
 {
     s->type = VALID;
@@ -97,7 +96,7 @@ void set_red(square * s)
     s->num_pieces = 1;
 }
 
-//initializes the board
+// Initializes the board
 void initialize_board(square board [BOARD_SIZE][BOARD_SIZE])
 {
     for(int i=0; i< BOARD_SIZE; i++) {
