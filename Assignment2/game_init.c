@@ -13,7 +13,7 @@ void initialize_players(player players[PLAYERS_NUM])
 
     // Assigning player names and colours
     for (int i = 0; i < PLAYERS_NUM; i++) {
-        // Player inputs
+        // Player name inputs
         printf("Player %d's name:\n", i+1);
         scanf("%s", players[i].player_name);
 

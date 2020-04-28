@@ -10,6 +10,6 @@ void print_board(square board[BOARD_SIZE][BOARD_SIZE]);
 
 void turns (player players[PLAYERS_NUM], square board[BOARD_SIZE][BOARD_SIZE]);
 
-
+void addPieces (player players[PLAYERS_NUM], square board[BOARD_SIZE][BOARD_SIZE], int turn);
 
 #endif //FOCUS_INPUT_OUTPUT_H

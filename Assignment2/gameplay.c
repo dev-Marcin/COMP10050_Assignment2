@@ -5,20 +5,25 @@
 
 void stackMerge (square* origin, square* new, player* players)
 {
-    piece* prev;
-    piece* tmp_stack = origin->stack;
+    piece* prev; // will hold old stack
+    piece* tmp_stack = origin->stack; // current stack
     piece* tmp = tmp_stack;
 
     // Counter of pieces in stack
     int count = 0;
 
+    // Counts number of pieces in stack, goes to end of stack
     while(tmp->next != NULL) {
         tmp = tmp->next;
         count++;
     }
 
+    // Adding new stack to end of the old stack
     tmp->next = new->stack;
-    while (tmp->next != NULL) {
+
+    // Checking for end of stack
+    while (tmp != NULL) {
+        // Removing pieces from stack size >5, and adding them to captured or owned pieces
         if (count >= 5) {
             if (tmp->p_color == players->player_color) {
                 players->pieces_owned++;
@@ -28,7 +33,10 @@ void stackMerge (square* origin, square* new, player* players)
             }
         }
 
+        // 'prev' stack set as old stack
         prev = tmp->next;
+
+        // When tmp reaches 5th piece in stack
         if (count == 4) {
             tmp->next = NULL;
             new->num_pieces = 5;
@@ -37,14 +45,13 @@ void stackMerge (square* origin, square* new, player* players)
         count++;
     }
 
-    if (count > 4) {
-        new->num_pieces = 5;
-    } else {
-        new->num_pieces = count + 1;
+    // When stack size is <5, setting stack size to count
+    if (count <= 4) {
+        new->num_pieces = count;
     }
 
     new->stack = tmp_stack;
     origin->stack = NULL;
     origin->num_pieces = 0;
-    // new->stack = tmp_stack;
 }
+
